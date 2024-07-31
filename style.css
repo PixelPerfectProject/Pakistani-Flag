@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    position: relative;
+    display: flex;
+    margin: 100px auto;
+    width: 500px;
+    height: 400px;
+}
+.white{
+    width: 25%;
+    height: 350px;
+    background-color: white;
+}
+.green{
+    height: 350px;
+    width: 75%;
+    background-color: green;
+    position: relative;
+}
+.moon{
+    position: absolute;
+    top: 73px;
+    left: 100px;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -18px 20px 0px 5px white;
+
+}
+.star{
+    top: 116px;
+    left: 186px;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-bottom: 55px solid white;
+    border-left: 30px solid transparent;
+    border-right: 35px solid transparent;
+    transform: rotate(56deg);
+}
+.star::before{
+    top: 5px;
+    left: -37px;
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 0px;
+    border-bottom: 55px solid white;
+    border-left: 30px solid transparent;
+    border-right: 35px solid transparent;
+    transform: rotate(-57deg);
+}
